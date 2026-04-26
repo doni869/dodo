@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-gold: #D4AF37;
+  --color-obsidian: #050505;
+  --color-obsidian-light: #080808;
+}
+
+@layer base {
+  body {
+    @apply bg-obsidian text-[#f0f0f0] antialiased selection:bg-gold/30;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.serif {
+  @apply font-serif;
+}
+
+.gold-text {
+  @apply text-gold;
+}
+
+.gold-bg {
+  @apply bg-gold;
+}
+
+.gold-border {
+  @apply border-gold;
+}
+
+.card-bg {
+  @apply bg-white/[0.03] border border-gold/20;
+}
+
+.hero-gradient-overlay {
+  background: linear-gradient(rgba(5,5,5,0.7), rgba(5,5,5,0.9));
+}
