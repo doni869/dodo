@@ -10,7 +10,7 @@ export default function About() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="rounded-3xl overflow-hidden border border-white/5 aspect-[4/5] relative z-10 filter grayscale hover:grayscale-0 transition-all duration-700"
+            className="rounded-3xl overflow-hidden border border-white/5 aspect-[4/5] relative z-10"
           >
             <img 
               src="https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
